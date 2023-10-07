@@ -1,0 +1,172 @@
+:root {
+  --gradient: linear-gradient(135deg, #2ec2f0 0%, #0e7bcf 30%, #0e03a8 95%);
+}
+
+body {
+  background-color: black;
+  color: white;
+  text-align: center;
+  font-family: Roboto, Verdana, Geneva, Tahoma, sans-serif;
+  line-height: 1.5;
+}
+
+.name {
+  text-align: left;
+}
+
+.navbar {
+  text-align: center;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 100;
+  background-color: black;
+  height: 17vh;
+}
+
+.navbar > a {
+  color: white;
+  font-size: 20px;
+  text-decoration: none;
+  padding: 15px;
+  font-weight: bold;
+}
+
+h1 {
+  background: var(--gradient);
+  text-align: center;
+  padding: 1vh;
+  display: inline-block;
+  font-size: 30px;
+}
+
+h2 {
+  color: #0e7bcf;
+  margin: 0;
+  padding-top: 2vh;
+}
+
+.full {
+  display: flex;
+  justify-content: space-around;
+  margin-top: 96.44px;
+  padding: 20px;
+}
+
+p {
+  font-size: 16px;
+  text-align: left;
+  line-height: 1.5;
+  background-color: black;
+  padding-top: 1vh;
+  padding-bottom: 1vh;
+  padding-left: 5vw;
+  padding-right: 5vw;
+  display: inline-block;
+}
+
+.links > a {
+  font-size: 30px;
+  text-align: center;
+  background: var(--gradient);
+  color: #0066cc;
+  width: 7vh;
+  height: 7vh;
+  border-radius: 1vh;
+  padding: 1vh;
+  transition: transform 0.5s ease;
+}
+
+.links > a:hover {
+  transform: scale(1.4);
+}
+
+.links {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  margin-top: 3vh;
+}
+
+.about-me-photos {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin: 45px;
+}
+
+.pro-photo {
+  width: 60vh;
+  height: 65.37vh;
+  overflow: hidden;
+  object-fit: contain;
+}
+
+.logo {
+  width: 7vh;
+  height: 7vh;
+  border-radius: 1vh;
+  align-items: center;
+}
+
+.left-side,
+.right-side {
+  width: 50%;
+}
+
+.left-side {
+  top: 20px;
+  position: sticky;
+}
+
+.right-content {
+  text-align: center;
+  background-color: black;
+}
+
+ul {
+  text-align: left;
+}
+
+.box {
+  background: var(--gradient);
+  padding: 1vh;
+  border-radius: 1vh;
+  margin-top: 5vh;
+  display: inline-block;
+}
+
+.box-content {
+  background: black;
+}
+
+.traveling-photo {
+  width: 66.6vh;
+  height: 39.82vh;
+}
+
+.ng,
+.python {
+  margin-bottom: 2vh;
+}
+
+.courses,
+.skills {
+  display: block;
+}
+
+.berkeley {
+}
+
+.skills-list {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  font-size: 18px;
+}
+
+.projects-list {
+  font-weight: bold;
+  font-size: 20px;
+}

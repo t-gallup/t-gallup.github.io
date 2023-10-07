@@ -1,0 +1,245 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" description="Personal Website for Tyler Gallup" />
+    <link rel="stylesheet" href="styles.css" />
+    <script src="script.js"></script>
+    <script src="server.js"></script>
+    <title>Tyler Gallup | Home</title>
+  </head>
+  <body>
+    <input class="color1" type="color" name="color1" value="#2ec2f0">
+    <input class="color2" type="color" name="color2" value="#0e7bcf">
+    <input class="color3" type="color" name="color3" value="#0e03a8">
+    <div class="navbar">
+      <a href="#home" class="name" onclick="smoothScrollTo('home', 17)">
+        <h1>Tyler Gallup</h1>
+      </a>
+      <a href="#about-me" onclick="smoothScrollTo('about-me', 17)" class="hov">About Me</a>
+      <a href="#work-experience" onclick="smoothScrollTo('work-experience', 17)" class="hov">Work Experience</a>
+      <a href="#courses" onclick="smoothScrollTo('courses', 17)" class="hov">Coursework</a>
+      <a href="#skills" onclick="smoothScrollTo('skills', 17)" class="hov">Skills</a>
+      <a href="#projects" onclick="smoothScrollTo('projects', 17)" class="hov">Projects</a>
+    </div>
+
+    <div class="full" id="home">
+      <div class="left-side">
+        <div class="box">
+          <div class="box-content">
+            <img
+              class="pro-photo"
+              src="public\images\Professional Photo.jpg"
+              alt="My Headshot"
+            />
+          </div>
+        </div>
+        <div class="links">
+          <a href="https://www.linkedin.com/in/tyler-gallup-2a11a4244/">
+            <img
+              src="public\images\LinkedIn Logo.png"
+              alt="LinkedIn Logo"
+              class="logo"
+            />
+          </a>
+          <a href="https://berkeley.joinhandshake.com/stu/users/26230263"
+            ><img
+              src="public\images\Handshake Logo.png"
+              alt="Handshake Logo"
+              class="logo"
+            />
+          </a>
+          <a href="https://www.instagram.com/t_gallup/"
+            ><img
+              src="public\images\Instagram Logo.png"
+              alt="Instagram Logo"
+              class="logo insta"
+            />
+          </a>
+
+          <a href="mailto:tgallup@berkeley.edu"
+            ><img
+              src="public\images\Mail Logo.png"
+              alt="Email Logo"
+              class="logo"
+            />
+          </a>
+        </div>
+      </div>
+
+      <div class="right-side">
+        <div class="right-content">
+          <div class="box about-me" id="about-me">
+            <div class="box-content">
+              <h2>About Me</h2>
+              <p>
+                I'm a fourth year Computer Science and Data Science double major
+                at UC Berkeley. My primary interests are Machine Learning, Data
+                Analysis, and Web Development, Cybersecurity, and Artificial
+                Intelligence. Outside of software, I'm highly active, playing
+                sports including tennis, basketball, and soccer, and competing
+                in Spartan races and triathalons. When I'm not working out, I
+                enjoy traveling, going to the beach, and playing video games.
+              </p>
+              <img
+                src="public\images\Traveling Photo.jpg"
+                alt="Traveling Photo"
+                class="traveling-photo"
+              />
+            </div>
+          </div>
+          <div class="box work-experience" id="work-experience">
+            <div class="box-content">
+              <h2>Work Experience</h2>
+              <ul>
+                <li>Northrop Grumman - Electronics Engineering Intern</li>
+                <ul class="nested-list">
+                  <li>Building ML Models</li>
+                  <li>Pulling from SQL databases</li>
+                  <li>
+                    Using pandas and matplotlib to manipulate and visualize data
+                  </li>
+                </ul>
+                <li>UFC GYM - IT Intern</li>
+                <ul class="nested-list">
+                  <li>Manages accounts of all 3000+ employees</li>
+                  <li>
+                    Creates and maintains the shared Excel spreadsheets for new
+                    hires
+                  </li>
+                  <li>Assembles and sets up computers and other hardware</li>
+                </ul>
+              </ul>
+              <div class="ng box">
+                <div class="box-content">
+                  <img
+                    src="public\images\NG Logo.png"
+                    alt="Northrop Grumman Logo"
+                    class="ng-logo"
+                  />
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="box courses" id="courses">
+            <div class="box-content">
+              <h2>Technical Coursework</h2>
+              <ul>
+                <li>Computer Security (CS 161)</li>
+                <li>Artificial Intelligence (CS 188)</li>
+                <li>Data Structures (CS 61B)</li>
+                <li>Principles & Techniques of Data Science (DATA C100)</li>
+                <li>Efficient Algorithms and Intractable Problems (CS 170)</li>
+                <li>Computer Architecture (CS 61C)</li>
+                <li>Operating Systems and System Programming (CS 162)</li>
+                <li>Discrete Mathematics and Probability (CS 70)</li>
+                <li>The Structure and Interpretation of Computer Programs (CS 61A)</li>
+                <li>Foundations of Data Science (Data C8)</li>
+                <li>Probability for Data Science (Data C140)</li>
+              </ul>
+              <div class="box ng">
+                <div class="box-content">
+                  <img
+                    src="public\images\Berkeley Logo.png"
+                    alt="UC Berkeley Logo"
+                  />
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="box skills" id="skills">
+            <div class="box-content">
+              <h2>Skills</h2>
+              <div class="skills-list">
+                <ul>
+                  <li>Python</li>
+                  <li>Java</li>
+                  <li>C</li>
+                  <li>Golang</li>
+                </ul>
+                <ul>
+                  <li>Pandas</li>
+                  <li>ML</li>
+                  <li>AI</li>
+                  <li>Excel</li>
+                </ul>
+                <ul>
+                  <li>HTML</li>
+                  <li>CSS</li>
+                  <li>JavaScript</li>
+                  <li>SciKit</li>
+                </ul>
+                <ul>
+                  <li>SQL</li>
+                  <li>Git</li>
+                  <li>React</li>
+              </div>
+
+              <div class="box python">
+                <div class="box-content">
+                  <img
+                    src="public\images\Python Logo.png"
+                    alt="Python Logo"
+                  />
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="box projects" id="projects">
+            <div class="box-content">
+              <h2>Projects</h2>
+              <ul>
+                <li class="projects-list">Encrypted File Sharing System</li>
+                <ul>
+                  <li>
+                    Used Golang to create a file sharing system similar to
+                    Dropbox
+                  </li>
+                  <li>
+                    Protected against attackers through encryption schemes,
+                    digital signatures and hash functions
+                  </li>
+                </ul>
+              </ul>
+              <ul>
+                <li class="projects-list">Pintos</li>
+                <ul>
+                  <li>
+                    Used C to implement many of the key functionalities of the
+                    operating system, Pintos
+                  </li>
+                  <li>
+                    These include multithreading, buffer cache, extensible
+                    files, and synchronization
+                  </li>
+                </ul>
+              </ul>
+              <ul>
+                <li class="projects-list">Gitlet</li>
+                <ul>
+                  <li>
+                    Made a smaller version of the version-control system Git in
+                    Java.
+                  </li>
+                  <li>
+                    The features implemented include committing save files,
+                    checking out previous commits, and merging conflicting
+                    commits together.
+                  </li>
+                </ul>
+              </ul>
+              <ul>
+                <li class="projects-list">Personal Website</li>
+                <ul>
+                  <li>Created this website using HTML, CSS, and JavaScript</li>
+                </ul>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
