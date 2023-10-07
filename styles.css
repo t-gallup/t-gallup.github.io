@@ -114,7 +114,7 @@ p {
   width: 60vh;
   height: 65.37vh;
   overflow: hidden;
-  object-fit: contain;
+  /* object-fit: contain; */
 }
 
 .pro-box {
@@ -173,4 +173,50 @@ ul {
 .projects-list {
   font-weight: bold;
   font-size: 20px;
+}
+
+@media (max-width: 1050px) {
+  .navbar > a {
+    font-size: 16px;
+  }
+
+  .navbar > a > h1 {
+    font-size: 20px;
+  }
+
+  .traveling-photo {
+    width: 53.28vh;
+    height: 31.86vh;
+  }
+}
+
+@media (max-width: 800px) {
+  .navbar > a {
+    font-size: 14px;
+  }
+
+  .navbar > a > h1 {
+    font-size: 16px;
+  }
+
+  .pro-photo {
+    width: 40vh;
+    height: 43.58vh;
+  }
+
+  .traveling-photo {
+    width: 44.4vh;
+    height: 26.55vh;
+  }
+
+  .skills-list {
+    flex-direction: column;
+    align-items: flex-start;
+    padding-left: 9vh;
+  }
+
+  .skills-list > ul {
+    margin: 0;
+    padding: 0;
+  }
 }
