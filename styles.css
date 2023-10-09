@@ -49,7 +49,7 @@ body {
 h1 {
   background: var(--gradient);
   text-align: center;
-  padding: 1vh;
+  padding: 2vh;
   display: inline-block;
   font-size: 30px;
 }
@@ -178,6 +178,7 @@ ul {
 @media (max-width: 1050px) {
   .navbar > a {
     font-size: 16px;
+    padding: 5px;
   }
 
   .navbar > a > h1 {
