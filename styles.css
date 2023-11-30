@@ -86,7 +86,6 @@ p {
 }
 
 .links > a {
-  font-size: 30px;
   text-align: center;
   background: var(--gradient);
   color: #0066cc;
@@ -258,6 +257,18 @@ ul {
   
   .big {
     display: none;
+  }
+
+  .berkeley {
+    width: 60vw;
+  }
+
+  .python {
+    width: 60vw;
+  }
+
+  .ng-logo {
+    width: 60vw;
   }
 }
 
