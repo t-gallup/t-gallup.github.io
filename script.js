@@ -12,6 +12,32 @@ document.addEventListener("DOMContentLoaded", () => {
   });
 });
 
+document.addEventListener("DOMContentLoaded", () => {
+  const clickElem = document.getElementById("dropdown-button")
+  const linkElem = document.getElementById("dropdown-links")
+
+  clickElem.addEventListener("click", () => {
+    if (linkElem.style.display == "none"){
+      linkElem.style.display = "flex";
+    }
+    else {
+      linkElem.style.display = "none";
+    }
+  })
+}
+)
+
+document.addEventListener("DOMContentLoaded", () => {
+  const clickElems = document.querySelectorAll('[id=dropdown-link]')
+  const dropdownElem = document.getElementById("dropdown-links")
+
+  clickElems.forEach((elem) => {
+    elem.addEventListener("click", () => {
+      dropdownElem.style.display="none"
+    })
+  })
+})
+
 function smoothScrollTo(targetId, offset) {
   const vh = window.innerHeight * (offset / 100);
   const targetElement = document.getElementById(targetId);

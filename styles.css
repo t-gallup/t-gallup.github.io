@@ -43,7 +43,7 @@ body {
   height: 17vh;
 }
 
-.navbar > a {
+.navbar-link {
   color: white;
   font-size: 20px;
   text-decoration: none;
@@ -165,10 +165,10 @@ ul {
   margin-bottom: 2vh;
 }
 
-.courses,
+/* .courses,
 .skills {
   display: block;
-}
+} */
 
 .skills-list {
   display: flex;
@@ -182,10 +182,40 @@ ul {
   font-size: 20px;
 }
 
+@media (min-width: 1050px) {
+  .small {
+    display: none;
+  }
+}
+
 @media (max-width: 1050px) {
+  .full{
+    flex-direction: column;
+  }
+
+  .left-side {
+    position: static;
+    width: 100%;
+    padding-top: 10vh;
+  }
+  
+  .right-side {
+    width: 100%;
+    padding-top: 0;
+  }
+
+  .right-box {
+    width: 80vw;
+  }
+  
+  .pro-photo {
+    width: 50vw;
+    height: 54.475vw; 
+  }
+
   .navbar > a {
     font-size: 16px;
-    padding: 5px;
+    padding: 2.5vh 5vw;
   }
 
   .navbar > a > h1 {
@@ -193,11 +223,75 @@ ul {
   }
 
   .traveling-photo {
-    width: 53.28vh;
-    height: 31.86vh;
+    width: 53.28vw;
+    height: 31.86vw;
+  }
+
+  .links > a {
+    width: 10vw;
+    height: 10vw;
+    padding: 1vw;
+  }
+
+  .logo {
+    width: 10vw;
+    height: 10vw;
+  }
+
+  .skills-list {
+    flex-wrap: wrap;
+  }
+
+  .skill-box {
+    flex-basis: 30%;
+  }
+
+  .navbar {
+    height: 15vh;
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .name .navbar-link {
+    padding: 5vh 5vw;
+  }
+  
+  .big {
+    display: none;
   }
 }
 
+
+
+.dropdown {
+  /* float: left; */
+  overflow: hidden;
+  /* text-align: center; */
+  padding: 5vh 5vw;
+}
+
+.dropdown button {
+  font-size: 30px;
+  border: solid grey;
+  outline: none;
+  color: white;
+  padding: 7px 8px;
+  background-color: inherit;
+  font-family: inherit;
+  /* margin: 5vw; */
+}
+
+.dropdown-links {
+  position: fixed;
+  top: 15vh;
+  left: 5vw;
+  background-color: black;
+  display: none;
+  flex-direction: column;
+  width: 90vw;
+}
+
+/* 
 @media (max-width: 800px) {
   .navbar > a {
     font-size: 14px;
@@ -208,8 +302,8 @@ ul {
   }
 
   .pro-photo {
-    width: 40vh;
-    height: 43.58vh;
+    width: 40vw;
+    height: 43.58vw;
   }
 
   .traveling-photo {
@@ -227,4 +321,16 @@ ul {
     margin: 0;
     padding: 0;
   }
-}
+
+  .logo {
+    width: 4vh;
+    height: 4vh;
+  }
+
+  .links > a {
+    width: 5vh;
+    height: 5vh;
+    padding: 0.5vh;
+    text-align: center;
+  }
+} */

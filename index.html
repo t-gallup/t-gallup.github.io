@@ -5,20 +5,38 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta name="description" description="Personal Website for Tyler Gallup" />
     <link rel="stylesheet" href="styles.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <script src="script.js"></script>
     <script src="server.js"></script>
     <title>Tyler Gallup | Home</title>
   </head>
   <body>
-    <div class="navbar">
+    <div class="navbar big">
       <a href="#home" class="name" onclick="smoothScrollTo('home', 17)">
         <h1>Tyler Gallup</h1>
       </a>
-      <a href="#about-me" onclick="smoothScrollTo('about-me', 17)" class="hov">About Me</a>
-      <a href="#work-experience" onclick="smoothScrollTo('work-experience', 17)" class="hov">Experience</a>
-      <a href="#courses" onclick="smoothScrollTo('courses', 17)" class="hov">Coursework</a>
-      <a href="#skills" onclick="smoothScrollTo('skills', 17)" class="hov">Skills</a>
-      <a href="#projects" onclick="smoothScrollTo('projects', 17)" class="hov">Projects</a>
+      <a href="#about-me" onclick="smoothScrollTo('about-me', 17)" class="navbar-link hov">About Me</a>
+      <a href="#work-experience" onclick="smoothScrollTo('work-experience', 17)" class="navbar-link hov">Experience</a>
+      <a href="#courses" onclick="smoothScrollTo('courses', 17)" class="navbar-link hov">Coursework</a>
+      <a href="#skills" onclick="smoothScrollTo('skills', 17)" class="navbar-link hov">Skills</a>
+      <a href="#projects" onclick="smoothScrollTo('projects', 17)" class="navbar-link hov">Projects</a>
+    </div>
+
+    <div class="navbar small">
+      <a href="#home" class="name navbar-link" onclick="smoothScrollTo('home', 17)">
+        <h1>Tyler Gallup</h1>
+      </a>
+      <div class="dropdown">
+        <button class="hov" id="dropdown-button"><i class="fa fa-bars"></i></button>
+      </div>
+    </div>
+
+    <div class="dropdown-links" id="dropdown-links">
+      <a href="#about-me" onclick="smoothScrollTo('about-me', 17)" class="navbar-link hov" id="dropdown-link">About Me</a>
+      <a href="#work-experience" onclick="smoothScrollTo('work-experience', 17)" class="navbar-link hov" id="dropdown-link">Experience</a>
+      <a href="#courses" onclick="smoothScrollTo('courses', 17)" class="navbar-link hov" id="dropdown-link">Coursework</a>
+      <a href="#skills" onclick="smoothScrollTo('skills', 17)" class="navbar-link hov" id="dropdown-link">Skills</a>
+      <a href="#projects" onclick="smoothScrollTo('projects', 17)" class="navbar-link hov" id="dropdown-link">Projects</a>
     </div>
 
     <div class="full" id="home">
@@ -156,25 +174,25 @@
             <div class="box-content">
               <h2>Skills</h2>
               <div class="skills-list">
-                <ul>
+                <ul class="skill-box">
                   <li>Python</li>
                   <li>Java</li>
                   <li>C</li>
                   <li>Golang</li>
                 </ul>
-                <ul>
+                <ul class="skill-box">
                   <li>Pandas</li>
                   <li>ML</li>
                   <li>AI</li>
                   <li>Excel</li>
                 </ul>
-                <ul>
+                <ul class="skill-box">
                   <li>HTML</li>
                   <li>CSS</li>
                   <li>JavaScript</li>
                   <li>SciKit</li>
                 </ul>
-                <ul>
+                <ul class="skill-box">
                   <li>SQL</li>
                   <li>Git</li>
                   <li>React</li>
