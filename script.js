@@ -12,20 +12,16 @@ document.addEventListener("DOMContentLoaded", () => {
   });
 });
 
-document.addEventListener("DOMContentLoaded", () => {
-  const clickElem = document.getElementById("dropdown-button")
+function dropdownMenu() {
   const linkElem = document.getElementById("dropdown-links")
 
-  clickElem.addEventListener("click", () => {
-    if (linkElem.style.display == "none"){
-      linkElem.style.display = "flex";
-    }
-    else {
-      linkElem.style.display = "none";
-    }
-  })
+  if (linkElem.style.display == "none"){
+    linkElem.style.display = "flex";
+  }
+  else {
+    linkElem.style.display = "none";
+  }
 }
-)
 
 document.addEventListener("DOMContentLoaded", () => {
   const clickElems = document.querySelectorAll('[id=dropdown-link]')
