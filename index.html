@@ -115,15 +115,21 @@
             <div class="box-content">
               <h2>Work Experience</h2>
               <ul>
-                <li>Northrop Grumman - Electronics Engineering Intern</li>
+                <li>Northrop Grumman - Software Engineer Intern</li>
                 <ul class="nested-list">
-                  <li>Building ML Models</li>
-                  <li>Pulling from SQL databases</li>
+                  <li>Building ML Models (MLP, LSTM, ARIMA) to predict future usage data 
+                    for over 600 chemicals used by the company
+                  </li>
+                  <li>Using Oracle SQL to pull and merge data from large databases and
+                    Python libraries (Pandas, Matplotlib, NumPy) to manipulate this 
+                    data, analyze different metrics, and create visualizations of the data. 
+                    Found over $50,000 worth of waste in 2023 using these methods.
+                  </li>
                   <li>
-                    Using pandas and matplotlib to manipulate and visualize data
+                    Creating Python scripts to automate scraping data off of competitor’s websites
                   </li>
                 </ul>
-                <li>UFC GYM - IT Intern</li>
+                <li>UFC GYM - Information Technology Intern</li>
                 <ul class="nested-list">
                   <li>Manages accounts of all 3000+ employees</li>
                   <li>
@@ -159,6 +165,7 @@
                 <li>The Structure and Interpretation of Computer Programs (CS 61A)</li>
                 <li>Foundations of Data Science (Data C8)</li>
                 <li>Probability for Data Science (Data C140)</li>
+                <li>Econometrics (Econ 140)</li>
               </ul>
               <div class="box">
                 <div class="box-content">
@@ -180,24 +187,37 @@
                   <li>Java</li>
                   <li>C</li>
                   <li>Golang</li>
+                  <li>R</li>
+                  <li>VS Code</li>
+                  <li>IntelliJ</li>
+                  <li>Node.js</li>
                 </ul>
                 <ul class="skill-box">
                   <li>Pandas</li>
                   <li>ML</li>
                   <li>AI</li>
+                  <li>Figma</li>
+                  <li>GNU Debugger</li>
                   <li>Excel</li>
+                  <li>Selenium</li>
                 </ul>
                 <ul class="skill-box">
                   <li>HTML</li>
                   <li>CSS</li>
                   <li>JavaScript</li>
                   <li>SciKit</li>
+                  <li>Keras</li>
+                  <li>Anaconda</li>
+                  <li>SciKit-Learn</li>
                 </ul>
                 <ul class="skill-box">
                   <li>SQL</li>
                   <li>Git</li>
                   <li>React</li>
+                  <li>REST API</li>
                   <li>Matplotlib</li>
+                  <li>PyCharm</li>
+                  <li>NumPy</li>
               </div>
 
               <div class="box python">
@@ -219,25 +239,37 @@
                 <li class="projects-list">Encrypted File Sharing System</li>
                 <ul>
                   <li>
-                    Used Golang to create a file sharing system similar to
-                    Dropbox
+                    Create a file-sharing system in Golang
+                    similar to Dropbox that protects user information and files from attackers
                   </li>
                   <li>
-                    Protected against attackers through encryption schemes,
-                    digital signatures and hash functions
+                    Used pseudorandom HMAC that uses a salt to hide the usernames and passwords from 
+                    attackers, but allows the server to authenticate users upon login
+                  </li>
+                  <li>
+                    Used hybrid encryption keys to securely allow users to invite other users 
+                    to edit their files and for the recipients to authenticate these invitations
+                    using the sender's digital signature
+                  </li>
+                  <li>
+                    Used symmetric encryption keys to store encrypted versions of user files on public servers
                   </li>
                 </ul>
               </ul>
               <ul>
-                <li class="projects-list">Pintos</li>
+                <li class="projects-list">Pintos Operating System</li>
                 <ul>
                   <li>
-                    Used C to implement many of the key functionalities of the
-                    operating system, Pintos
+                    Used C to implement many of the key functionalities of the operating system, Pintos
                   </li>
                   <li>
-                    These include multithreading, buffer cache, extensible
-                    files, and synchronization
+                    Created a set of functioning syscalls for both process control and file operations
+                  </li>
+                  <li>
+                    Created strict priority scheduler to handle multi-threading and properly donate priority so higher priority tasks can acquire locks being used by lower priority tasks
+                  </li>
+                  <li>
+                    Handled synchronization of memory allocation and freeing for this multiple thousand line project
                   </li>
                 </ul>
               </ul>
@@ -246,13 +278,30 @@
                 <ul>
                   <li>
                     Made a smaller version of the version-control system Git in
-                    Java.
+                    Java
                   </li>
                   <li>
-                    The features implemented include committing save files,
-                    checking out previous commits, and merging conflicting
-                    commits together.
+                    Created functionality to commit files, check out previous
+                    commits, check the past log of previous commits, create new branches to store different versions of the project, and merge conflicting commits
                   </li>
+                </ul>
+              </ul>
+              <ul>
+                <li class="projects-list">NumC</li>
+                <ul>
+                  <li>Implemented many of the matrix functions in the NumPy library in C
+                  <li>
+                    Using algorithms, SIMD, OpenMP, and other optimizations, the functions
+                    were optimized to run up to 1000 times faster than a naive implementation of the same functions.
+                  </li>
+                </ul>
+              </ul>
+              <ul>
+                <li class="projects-list">Productivity Website</li>
+                <ul>
+                  <li>Used React to create a productivity tracker that dynamically tracks tasks</li>
+                  <li>Allows users to easily edit task descriptions and move tasks to any day</li>
+                  <li>Locally stores users' tasks so they can easily save and load their tasks</li>
                 </ul>
               </ul>
               <ul>
