@@ -22,10 +22,12 @@ body {
   margin-top: 5vh;
   display: inline-block;
   overflow: auto;
+  margin-bottom: 2vh;
 }
 
 .box-content {
   background: black;
+  padding: 2vh;
 }
 
 .name {
@@ -68,7 +70,6 @@ h2 {
 .full {
   display: flex;
   justify-content: space-around;
-  /* margin-top: 75.76px; */
   padding: 20px;
   padding-top: 0;
 }
@@ -118,7 +119,6 @@ p {
   width: 50vh;
   height: 54.475vh;
   overflow: hidden;
-  /* object-fit: contain; */
 }
 
 .pro-box {
@@ -158,16 +158,13 @@ ul {
   height: 39.82vh;
 }
 
-.ng,
-.python,
-.github {
-  margin-bottom: 2vh;
+.berkeley {
+  width: 18vw;
 }
 
-/* .courses,
-.skills {
-  display: block;
-} */
+.usf {
+  width: 18vw;
+}
 
 .skills-list {
   display: flex;
@@ -188,7 +185,7 @@ ul {
 }
 
 @media (max-width: 1050px) {
-  .full{
+  .full {
     flex-direction: column;
   }
 
@@ -197,7 +194,7 @@ ul {
     width: 100%;
     padding-top: 10vh;
   }
-  
+
   .right-side {
     width: 100%;
     padding-top: 0;
@@ -206,10 +203,10 @@ ul {
   .right-box {
     width: 80vw;
   }
-  
+
   .pro-photo {
     width: 50vw;
-    height: 54.475vw; 
+    height: 54.475vw;
   }
 
   .navbar > a {
@@ -254,30 +251,26 @@ ul {
   .name .navbar-link {
     padding: 5vh 5vw;
   }
-  
+
   .big {
     display: none;
   }
 
   .berkeley {
-    width: 60vw;
+    width: 30vw;
   }
 
-  .python {
-    width: 60vw;
+  .usf {
+    width: 30vw;
   }
 
   .ng-logo {
-    width: 60vw;
+    width: 30vw;
   }
 }
 
-
-
 .dropdown {
-  /* float: left; */
   overflow: hidden;
-  /* text-align: center; */
   padding: 5vh 5vw;
 }
 
@@ -289,7 +282,6 @@ ul {
   padding: 7px 8px;
   background-color: inherit;
   font-family: inherit;
-  /* margin: 5vw; */
 }
 
 .dropdown-links {
@@ -302,46 +294,22 @@ ul {
   width: 90vw;
 }
 
-/* 
-@media (max-width: 800px) {
-  .navbar > a {
-    font-size: 14px;
-  }
+.flex {
+  display: flex;
+}
 
-  .navbar > a > h1 {
-    font-size: 16px;
-  }
+.space {
+  justify-content: space-evenly;
+}
 
-  .pro-photo {
-    width: 40vw;
-    height: 43.58vw;
-  }
+.green {
+  background-color: #00543c;
+}
 
-  .traveling-photo {
-    width: 44.4vh;
-    height: 26.55vh;
-  }
+.no-margin {
+  margin: 0;
+}
 
-  .skills-list {
-    flex-direction: column;
-    align-items: flex-start;
-    padding-left: 9vh;
-  }
-
-  .skills-list > ul {
-    margin: 0;
-    padding: 0;
-  }
-
-  .logo {
-    width: 4vh;
-    height: 4vh;
-  }
-
-  .links > a {
-    width: 5vh;
-    height: 5vh;
-    padding: 0.5vh;
-    text-align: center;
-  }
-} */
+.even-flex {
+  flex: 1;
+}
