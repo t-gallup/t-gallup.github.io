@@ -313,3 +313,11 @@ ul {
 .even-flex {
   flex: 1;
 }
+
+a {
+  color: #2ec2f0;
+}
+
+a:hover {
+  color: #0e7bcf;
+}
