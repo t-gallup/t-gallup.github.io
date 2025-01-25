@@ -90,14 +90,15 @@
               <h2>About Me</h2>
               <p>
                 I'm a M.S. Data Science student at the University 
-                of San Francisco. I recently graduated from UC Berkeley with a
+                of San Francisco. I am also currently working as a Data Science intern for SnapLogic.
+                I recently graduated from UC Berkeley with a
                 double major in Computer Science and Data Science. My primary 
                 interests are Machine Learning, Large Language Models, Generative AI, 
                 Data Analysis, and Web Development. Outside of software, I'm 
                 highly active, playing
                 sports including tennis, basketball, and soccer, and competing
                 in Spartan races and triathalons. When I'm not working out, I
-                enjoy traveling, going to the beach, watching TV, and reading.
+                enjoy traveling, going to the beach, watching TV, and rooting for the Warriors and 49ers.
               </p>
               <img
                 src="public\images\Traveling Photo.jpg"
@@ -110,20 +111,31 @@
             <div class="box-content">
               <h2>Work Experience</h2>
               <ul>
-                <li>Northrop Grumman - Data Scientist</li>
+                <li>SnapLogic - Data Scientist, Intern</li>
                 <ul class="nested-list">
-                  <li>Developed ML models for budget forecasting of over 600 chemicals used by the company as an intern
+                  <li>Implemented an LLM-based classification system to categorize customer pipelines into Lines of Business (LOBs),
+                    leveraging prompt engineering and metadata analysis to achieve 85% classification accuracy
                   </li>
                   <li>
-                    Identified over $50,000 worth of potential cost-savings
+                    Engineered distributed data processing workflows using PySpark on GCP Dataproc clusters, efficiently processing
+                    20GB+ datasets in under 2 minutes, enabling rapid pipeline analysis at scale
                   </li>
-                  <li>Used Oracle SQL to pull and merge data from large databases and Python 
-                    libraries (Pandas, Matplotlib, NumPy) to manipulate this data, analyze
-                     different metrics, and create instructive visualizations of the data
+                  <li>Implemented a scalable data storage and analytics system in BigQuery, enabling automated tracking of pipeline
+                    classifications and real-time LOB reporting
+                  </li>
+                </ul>
+                <li>Northrop Grumman - Data Scientist, Intern</li>
+                <ul class="nested-list">
+                  <li>Engineered ML models for chemical cost forecasting across 600+ compounds, enabling proactive budgeting
                   </li>
                   <li>
-                    Created Python scripts using the Selenium and BeautifulSoup libraries 
-                    to automate the web scraping process for 9 competitors' websites
+                    Drove $50,000+ in cost savings through data-driven insights
+                  </li>
+                  <li>Built ETL pipelines using Oracle SQL and Python (Pandas, NumPy) to process complex chemical pricing data,
+                    developing interactive dashboards that informed strategic purchasing decisions
+                  </li>
+                  <li>
+                    Automated price monitoring by developing Selenium Python web scrapers to track 9 competitors’ pricing
                   </li>
                 </ul>
                 <li>UFC GYM - Information Technologist</li>
@@ -142,9 +154,9 @@
               <div class="ng box">
                 <div class="box-content">
                   <img
-                    src="public\images\NG Logo.png"
-                    alt="Northrop Grumman Logo"
-                    class="ng-logo"
+                    src="public\images\SnapLogic Logo.png"
+                    alt="SnapLogic Grumman Logo"
+                    class="snaplogic-logo"
                   />
                 </div>
               </div>
@@ -165,17 +177,23 @@
                   <li>Operating Systems and System Programming (CS 162)</li>
                   <li>Discrete Mathematics and Probability (CS 70)</li>
                   <li>The Structure and Interpretation of Computer Programs (CS 61A)</li>
+                  <li>Probability for Data Science (DATA C140)</li>
+                  <li>Principles & Techniques of Data Science (DATA C100)</li>
+                  <li>Econometrics (ECON 140)</li>
                 </ul>
                 <ul class="even-flex">
+                  <li>Advanced Machine Learning (MSDS 630)</li>
+                  <li>Distributed Computing (MSDS 697)</li>
+                  <li>Experiments in Data Science (MSDS 629)</li>
                   <li>Computation for Data Science (MSDS 501)</li>
+                  <li>Distributed Data Systems (MSDS 694)</li>
+                  <li>Intro to Machine Learning (MSDS 621)</li>
                   <li>Data Acquisition (MSDS 692)</li>
                   <li>EDA and Visualization (MSDS 593)</li>
                   <li>Linear Regression Analysis (MSDS 601)</li>
                   <li>Relational Databases (MSDS 691)</li>
-                  <li>Principles & Techniques of Data Science (DATA C100)</li>
-                  <li>Foundations of Data Science (DATA C8)</li>
-                  <li>Probability for Data Science (DATA C140)</li>
-                  <li>Econometrics (ECON 140)</li>
+                  <li>Time Series Analysis (MSDS 604)</li>
+                  <li>Data Structures and Algorithms (MSDS 689)</li>
                 </ul>
                 
               </div>
@@ -209,9 +227,9 @@
                 <ul class="skill-box">
                   <li>Python</li>
                   <li>Java</li>
-                  <li>C</li>
+                  <li>Bash</li>
                   <li>Golang</li>
-                  <li>R</li>
+                  <li>C</li>
                   <li>VS Code</li>
                   <li>Node.js</li>
                 </ul>
@@ -225,8 +243,8 @@
                   <li>Selenium</li>
                 </ul>
                 <ul class="skill-box">
-                  <li>HTML</li>
-                  <li>CSS</li>
+                  <li>GCP</li>
+                  <li>PySpark</li>
                   <li>JavaScript</li>
                   <li>pandas</li>
                   <li>Keras</li>
@@ -259,10 +277,10 @@
             <div class="box-content">
               <h2>Projects</h2>
               <ul>
-                <li class="projects-list">Q&A Generator</li>
+                <li class="projects-list">Research Assistant</li>
                 <ul>
-                  <li>Created a Q&A generator that takes any user-input URL and used LangChain and HuggingFace to construct the
-                    Retrieval-Augmented Generation (RAG) pipeline</li>
+                  <li>Created a multi-modal research assistant that takes any user-input URL and used LangChain and HuggingFace to
+                    construct the Retrieval-Augmented Generation (RAG) pipeline</li>
                   <li>Utilized TensorFlow's GPU acceleration to speed up the tokenization and summarization of inputs before feeding
                     these inputs into OpenAI's API using custom prompts</li>
                   <li>Integrated an additional OpenAI prompt to identify related topics and leveraged Google's API to fetch the most

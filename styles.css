@@ -166,6 +166,10 @@ ul {
   width: 18vw;
 }
 
+.snaplogic-logo {
+  width: 18vw;
+}
+
 .skills-list {
   display: flex;
   align-items: center;
@@ -264,7 +268,7 @@ ul {
     width: 30vw;
   }
 
-  .ng-logo {
+  .snaplogic-logo {
     width: 30vw;
   }
 }
